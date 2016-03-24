@@ -32,3 +32,13 @@ function buyCursor(){
     var nextCost = Math.floor(10 * Math.pow(1.1,cursors));          //works out the cost of the next cursor
     document.getElementById('cursorCost').innerHTML = nextCost;     //updates the cursor cost for the user
 };
+
+
+
+// This will run every 1000ms=1s
+// AKA: The Game Loop
+window.setInterval(function(){
+
+    penguinClick(cursors);
+    
+}, 1000);
